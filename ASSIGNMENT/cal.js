@@ -49,7 +49,6 @@ function checkSequenceVsDifferenceArray(sequenceArray,differenceArray)
         }
         if(!found)
         {
-            found = false;
             break;
         }
     }
@@ -73,7 +72,6 @@ function solveProblem()
     document.getElementById("differenceString").innerHTML = printArray(getDifferenceArray(args));
 
     document.getElementById("sequneceString").innerHTML = printArray(getSequenceArray(args.length));
-
 
     document.getElementById("outputString").innerHTML = checkSequenceVsDifferenceArray(getSequenceArray(args.length),getDifferenceArray(args));
     
