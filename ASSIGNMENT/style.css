@@ -1,0 +1,26 @@
+.mainDiv
+{
+    text-align: center;
+}
+
+.inputText
+{
+    width: 20%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    border: 1px solid #ccc;
+    font:normal bold 18px/1 "Open Sans", sans-serif;
+}
+
+.button
+{
+    background:#15d798;
+    border: #ffffff;
+    border-radius:1000px;
+    padding:20px 25px;
+    color:#ffffff;
+    display:inline-block;
+    cursor: pointer;
+    font:normal bold 25px/1 "Open Sans", sans-serif;
+    text-align:center;
+}

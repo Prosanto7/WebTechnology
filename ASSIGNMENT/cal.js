@@ -1,3 +1,7 @@
+/**
+ * This Problem is solved by Prosanto Deb(ASH1925005M) 
+ */
+
 function printArray(args)
 {
     var output = "";
@@ -36,7 +40,7 @@ function getSequenceArray(n)
 
 function checkSequenceVsDifferenceArray(sequenceArray,differenceArray)
 {
-    let found=false;
+    let flag = 0;
 
     for(let i=0;i<sequenceArray.length;i++)
     {
@@ -44,16 +48,13 @@ function checkSequenceVsDifferenceArray(sequenceArray,differenceArray)
         {
             if(sequenceArray[i]==differenceArray[j])
             {
-                found = true;
+                flag++;
+                break;
             }
-        }
-        if(!found)
-        {
-            break;
         }
     }
 
-    if(found)
+    if(flag==differenceArray.length)
     {
         return "Jolly";
     }
@@ -65,14 +66,23 @@ function checkSequenceVsDifferenceArray(sequenceArray,differenceArray)
 
 function solveProblem()
 {
-    const args = [1,4,2,-1,6];
+    var inputString = document.getElementById("inputString").value;
 
-    document.getElementById("inputString").innerHTML = printArray(args);
+    var args = inputString.split(",").map((num)=>{
+        return Number(num)
+      })
 
-    document.getElementById("differenceString").innerHTML = printArray(getDifferenceArray(args));
-
-    document.getElementById("sequneceString").innerHTML = printArray(getSequenceArray(args.length));
-
-    document.getElementById("outputString").innerHTML = checkSequenceVsDifferenceArray(getSequenceArray(args.length),getDifferenceArray(args));
+    alert(checkSequenceVsDifferenceArray(getSequenceArray(args.length),getDifferenceArray(args)));
     
+}
+
+function appendInput(c)
+{
+    var inputString = document.getElementById("inputString").value;
+    document.getElementById("inputString").value = inputString + c;
+}
+
+function clearInput()
+{
+    document.getElementById("inputString").value = "";
 }

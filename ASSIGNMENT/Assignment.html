@@ -2,13 +2,26 @@
 <html>
 <head>
     <title>ASSIGNMENT (ASH1925005M)</title>
+    <link rel="stylesheet" href="style.css">
     <script src="cal.js"></script>
 </head>
 <body>
-    <button onclick="solveProblem()">Click me</button>
-    <p id="inputString"></p>
-    <p id="differenceString"></p>
-    <p id="sequneceString"></p>
-    <p id="outputString"></p>
+    <div class="mainDiv">
+        <br>
+        <input type="text" class="inputText" id="inputString" placeholder="Press or Enter Values (Comma Seperated)"> <br><br>
+        <button type="button" class="button" onclick="appendInput(7)">7</button>
+        <button type="button" class="button" onclick="appendInput(8)">8</button>
+        <button type="button" class="button" onclick="appendInput(9)">9</button> <br>
+        <button type="button" class="button" onclick="appendInput(4)">4</button>
+        <button type="button" class="button" onclick="appendInput(5)">5</button>
+        <button type="button" class="button" onclick="appendInput(6)">6</button> <br>
+        <button type="button" class="button" onclick="appendInput(1)">1</button>
+        <button type="button" class="button" onclick="appendInput(2)">2</button>
+        <button type="button" class="button" onclick="appendInput(3)">3</button> <br>
+        <button type="button" class="button" onclick="appendInput(',')">,</button>
+        <button type="button" class="button" onclick="appendInput(0)">0</button>
+        <button type="button" class="button" onclick="clearInput()">c</button> <br><br>
+        <button type="button" class="button" onclick="solveProblem()">Check</button>
+    </div>
 </body>
 </html>
