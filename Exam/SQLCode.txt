@@ -1,0 +1,39 @@
+CREATE TABLE Department(
+	Department_ID varchar(20),
+    Department_name varchar(20),
+    
+    PRIMARY KEY (Department_ID)
+)
+
+CREATE TABLE Employee(
+	Employee_ID varchar(20),
+    Employee_name varchar(20),
+    Employee_age int,
+    
+    PRIMARY KEY (Employee_ID)
+)
+
+CREATE TABLE Employee_Department(
+	Employee_ID varchar(20),
+	Department_ID varchar(20),
+    
+    PRIMARY KEY (Employee_ID,Department_ID),
+    FOREIGN KEY (Employee_ID) REFERENCES employee(Employee_ID),
+    FOREIGN KEY (Department_ID) REFERENCES department(Department_ID)
+)
+
+CREATE TABLE Salary(
+	Salary_Scale varchar(20),
+    Salary_Amount int,
+    
+    PRIMARY KEY (Salary_Scale)
+)
+
+CREATE TABLE Employee_Salary(
+	Employee_ID varchar(20),
+	Salary_Scale varchar(20),
+    
+    PRIMARY KEY (Employee_ID,Salary_Scale),
+    FOREIGN KEY (Employee_ID) REFERENCES employee(Employee_ID),
+    FOREIGN KEY (Salary_Scale) REFERENCES salary(Salary_Scale)
+)
