@@ -1,28 +1,3 @@
-function evenoddProblem()
-{
-    var number = parseFloat(prompt("Enter a value :"));
-    var step = 0;
-
-    for(;number>=1;)
-    {
-        if(number%2==0)
-        {
-            number = number/2;
-            step++;
-        }
-        else
-        {
-            number = (number * 3) + 1;
-            step++;
-        }
-        
-    }
-
-    document.write(step);
-}
-
-
-
 function calculate()
 {
     var num1,num2;
