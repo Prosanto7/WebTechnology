@@ -60,20 +60,6 @@ function showDetails() {
     student.show();
 }
 
-
-
 function reset() {
-    document.getElementById("name").value = "";
-    document.getElementById("email").value = "";
-    document.getElementById("campusCheckBox").checked = false;
-    document.getElementById("studentsCheckBox").checked = false;
-    document.getElementById("locationsCheckBox").checked = false;
-    document.getElementById("atmosphereCheckBox").checked = false;
-    document.getElementById("dormRoomsCheckBox").checked = false;
-    document.getElementById("sportsCheckBox").checked = false;
-    document.getElementById("friendsRadio").checked = false;
-    document.getElementById("telivisionRadio").checked = false;
-    document.getElementById("internetRadio").checked = false;
-    document.getElementById("othersRadio").checked = false;
-    document.getElementById("commentsTextArea").value = "";
+    document.getElementById("userForm").value = null;
 }
