@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Admin Panel</title>
+</head>
+<body>
+    <div style="margin: auto;">
+        <form action="bookcar.php" method="POST">
+            <table>
+                <tr>
+                    <th colspan="2">Select Car</th>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Insert Booking ID</label>
+                    </td>
+                    <td>
+                        <input type="text" name="bookid"> <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <label>Insert Car ID</label>
+                    </td>
+                    <td>
+                        <input type="text" name="carid"> <br>
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Book Car"><br>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div> 
+
+    <div style="margin: auto;">
+        <form action="showcar.php" method="POST">
+            <table>
+                <tr>
+                    <td colspan="2">
+                        <input type="submit" value="Show Car"><br>
+                    </td>
+                </tr>
+            </table>
+        </form>
+    </div> 
+</body>
+</html>

@@ -1,0 +1,17 @@
+create table car(
+    id int,
+	vehicle_title varchar(10),
+    brand varchar(10),
+    model_year varchar(10),
+    price int(10),
+
+    PRIMARY key (id)
+)
+
+create table booking(
+	bookid int,
+    cadid int,
+
+    PRIMARY key (bookid),
+    FOREIGN key (cadid) REFERENCES car(id)
+)
